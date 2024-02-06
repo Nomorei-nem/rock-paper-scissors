@@ -45,7 +45,7 @@ const playRound = function (playerSelection, computerSelection) {
 		return 'You lose! Scissors beats Paper!';
 };
 
-const playerSelection = 'roCK';
+const playerSelection = prompt("Let's play Paper Rock Scissors. Pick one!");
 const computerSelection = getComputerChoice();
 
 // console.log(playRound(playerSelection, computerSelection));
