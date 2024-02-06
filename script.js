@@ -48,6 +48,12 @@ const playRound = function (playerSelection, computerSelection) {
 const playerSelection = 'roCK';
 const computerSelection = getComputerChoice();
 
-console.log(playRound(playerSelection, computerSelection));
+// console.log(playRound(playerSelection, computerSelection));
 
-console.log(computerSelection);
+const playGame = function () {
+	for (let i = 0; i < 5; i++) {
+		console.log(playRound(playerSelection, getComputerChoice(), i));
+	}
+};
+
+playGame();
